@@ -1,13 +1,15 @@
 export default function Bio() {
     return (
-      <div class="intro">
+      <div>
+      <div className="intro">
         <h1>¡Bienvenido a mi sitio web!</h1>
       </div>
-      <p class="summary">
+      <p className="summary">
         Puedes encontrar mis reflexiones aquí.
-        <br><br>
-        <b>¡Y <i>fotografías</b></i> de científicos!
+        <br/><br/>
+        <b>¡Y <i>fotografías</i> de científicos!</b>
       </p>
+      </div>
     );
   }
   

@@ -1,21 +1,26 @@
-const baseUrl = 'https://i.imgur.com/';
+
 const person = {
   name: 'Gregorio Y. Zara',
+  imageInit: 'https://i.imgur.com/',
   imageId: '7vQD0fP',
-  imageSize: 's',
+  imageSize: 'b',
+  imageExt: '.jpg',
   theme: {
     backgroundColor: 'black',
     color: 'pink'
   }
 };
 
-export default function TodoList() {
+export default function TodoList2() {
+
+  const imageUrl = `${person.imageInit}${person.imageId}${person.imageSize}${person.imageExt}`;
+
   return (
     <div style={person.theme}>
       <h1>Tareas pendientes de {person.name}</h1>
       <img
         className="avatar"
-        src="{baseUrl}{person.imageId}{person.imageSize}.jpg"
+        src={imageUrl}
         alt={person.name}
       />
       <ul>
